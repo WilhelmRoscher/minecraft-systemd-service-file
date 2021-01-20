@@ -1,0 +1,26 @@
+[Unit]
+Description=Minecraft Server
+
+Wants=network.target
+After=network.target
+
+[Service]
+User=minecraft
+Group=minecraft
+Nice=5
+KillMode=control-group
+RemainAfterExit=yes
+SuccessExitStatus=0 1
+
+ProtectHome=true
+ProtectSystem=full
+PrivateDevices=true
+NoNewPrivileges=true
+PrivateTmp=true
+InaccessibleDirectories=/root /sys /srv -/opt /media -/lost+found
+ReadWriteDirectories=/var/minecraft/server
+WorkingDirectory=/var/minecraft/server
+ExecStart=bash start-server.sh
+
+[Install]
+WantedBy=multi-user.target
