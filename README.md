@@ -20,6 +20,6 @@ Systemd service file to start/stop/enable a minecraft server. If you want to con
 4. Use normal systemd commands to start/stop/enable the minecraft server. (https://wiki.ubuntuusers.de/systemd/systemctl/)
 
 ### Connecting to server console
-1. Swith to user "minecraft" (`sudo su minecraft`)
+1. Switch to user "minecraft" (`sudo su minecraft`)
 2. Run `screen -r minecraft`
 3. Disconnect using `ctrl + a` followed by `d` (https://wiki.ubuntuusers.de/Screen/)
