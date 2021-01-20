@@ -1,3 +1,10 @@
+# Prerequisites
+* user "minecraft"
+  * member of group "minecraft" (`groupadd -r minecraft`)
+  * home at /var/minecraft/ (`useradd -r -g minecraft -d "/var/minecraft" -s "/bin/bash" minecraft`)
+  * ownes /var/minecraft/server (`chown minecraft.minecraft -R /var/minecraft/`)
+* server.jar at /var/minecraft/server/server.jar
+
 # Usage
 1. Use the files provided in the "with_screen" directory of this repository.
 1. Write the minecraft.service file in /etc/systemd/system/
