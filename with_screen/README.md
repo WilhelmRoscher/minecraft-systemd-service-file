@@ -6,7 +6,6 @@
 * server.jar at /var/minecraft/server/server.jar
 
 # Usage
-1. Use the files provided in the "with_screen" directory of this repository.
 1. Write the minecraft.service file in /etc/systemd/system/
 1. Write the start-server.sh script in /var/minecraft/server/
 1. Run `systemctl daemon-reload`
